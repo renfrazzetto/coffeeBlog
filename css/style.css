@@ -102,3 +102,10 @@ img{
         gap: 2rem;
     }
 }
+@media(min-width: 768px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
