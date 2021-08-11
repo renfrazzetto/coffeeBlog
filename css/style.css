@@ -3,6 +3,7 @@
     --fontParagraph: 'Open Sans', sans-serif;
 
     --primary: #784D3C;
+    --gray: #e1e1e1;
 }
 html{
     box-sizing: border-box;
@@ -41,7 +42,7 @@ h3{
     font-size: 3.2rem;
 }
 h4{
-    font-size: 2.8;
+    font-size: 2.8rem;
 }
 img{
     max-width: 100%;
@@ -108,4 +109,55 @@ img{
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
+}
+.entry{
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+.entry:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.button{
+    display: block;
+    font-family: var(--fontHeadings);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media(min-width: 768px) {
+    .button{
+        display: inline-block;
+    }
+}  
+.button--primary{
+    background-color: #000;
+}
+.button--secondary{
+    background-color: var(--primary);
+}
+.courses{
+    list-style: none; /* To delete the points of the list*/
+}
+.widget-course{
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+.widget-course:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.widget-course__label{
+    font-family: var(--fontHeadings);
+    font-weight: 700;
+}
+.widget-course__info{
+    font-weight: 400;
+}
+.widget-course__info,
+.widget-course__label{
+    font-size: 2rem;
 }
