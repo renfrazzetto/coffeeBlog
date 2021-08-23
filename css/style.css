@@ -129,6 +129,10 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
+.button:hover{
+    cursor: pointer;
 }
 @media(min-width: 768px) {
     .button{
@@ -206,4 +210,36 @@ img{
 .course__info,
 .course__label{
     font-size: 2rem;
+}   
+
+/** Contact **/
+.contact-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form{
+    background-color: #fff;
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.field{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.field__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    font-weight: 700;
+    
+}
+.field__input{
+    flex: 1;
+    border: 1px solid var(--gray);
+}
+.field__input-textarea{
+    height: 20rem;
 }
